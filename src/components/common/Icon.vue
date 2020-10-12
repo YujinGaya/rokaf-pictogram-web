@@ -1,9 +1,11 @@
 <template>
   <div class="icon">    
+    <div>
       <router-link :to="to">
         <img :alt="icon.name" :src="path">
       </router-link>
     <p> {{ icon.name }} </p>
+    </div>
   </div>
 </template>
 
@@ -29,7 +31,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-div {
+.icon{
   width: 100px;
   height: 120px;
   padding: 20px 10px;
