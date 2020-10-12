@@ -31,15 +31,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.icon{
-  width: 100px;
-  height: 120px;
-  padding: 20px 10px;
-}
 
 .text {
   width: 100px;
-  height: 100px;
+  height: 120px;
+  padding: 20px 10px;
 }
 
 img {
