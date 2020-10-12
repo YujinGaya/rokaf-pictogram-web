@@ -1,10 +1,10 @@
 <template>
   <div class="icon">    
-    <div>
+    <div class="text">
       <router-link :to="to">
         <img :alt="icon.name" :src="path">
       </router-link>
-    <p> {{ icon.name }} </p>
+      <p> {{ icon.name }} </p>
     </div>
   </div>
 </template>
@@ -36,6 +36,12 @@ export default {
   height: 120px;
   padding: 20px 10px;
 }
+
+.text {
+  width: 100px;
+  height: 100px;
+}
+
 img {
   width: 100px;
   height: 100px;
