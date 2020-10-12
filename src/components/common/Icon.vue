@@ -1,13 +1,8 @@
 <template>
   <div class="icon">    
-    <template v-if="to">
       <router-link :to="to">
         <img :alt="icon.name" :src="path">
       </router-link>
-    </template>
-    <template v-else>
-      <img :alt="icon.name" :src="path">
-    </template>
     <p> {{ icon.name }} </p>
   </div>
 </template>
@@ -34,7 +29,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.icon{
+div {
   width: 100px;
   height: 120px;
   padding: 20px 10px;
